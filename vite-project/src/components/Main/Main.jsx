@@ -1,6 +1,20 @@
+import Welcome from "../Welcome/welcome"
+
 const Main = () => {
+
+    const names = ["Gunnar", "Marlene", "Jannick", "HC", "Heinz"]
+
+    const randomIndex = Math.floor(Math.random() * names.length);
+
+    const randomName = names[randomIndex];
+
+
+
     return(
-        <h1>Hello page content goes here</h1>
+        
+        <Welcome name={randomName} />
+        
+        
     )
 }
 
